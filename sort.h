@@ -5,6 +5,9 @@
 #include <stdio.h>
 #include <stdbool.h>
 
+#define INCREMENT 1
+#define DECREMENT -1
+
 /**
  * struct listint_s - Doubly linked list node
  *
@@ -31,6 +34,8 @@ void shell_sort(int *array, size_t size);
 void counting_sort(int *array, size_t size);
 void radix_sort(int *array, size_t size);
 void bitonic_sort(int *array, size_t size);
-int getCantRep(int num);
+void cocktail_sort_list(listint_t **list);
+void swap_nodes(listint_t **list, listint_t *node);
+listint_t *get_dlistint_lelem(listint_t *h);
 
 #endif
